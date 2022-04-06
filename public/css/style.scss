@@ -100,6 +100,104 @@ nav, .hero {
 }
 // End Form Search
 
+// Page Search
+.page-search {
+  position: relative;
+  margin-bottom: 108px;
+
+  .head {
+    background-color: #F1F3FF;
+    min-height: 150px;
+  }
+
+  .box {
+    max-width: 1047px;
+    min-height: 106px;
+    border-radius: 8px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    margin-top: -70px;
+
+    p {
+      margin: 24px 0 -10px 24px;
+    }
+
+    .row-input {
+      padding: 24px 0 24px 24px;
+
+      .btn-edit {
+        background-color: #FFF !important;
+        color: #000 !important;
+        padding: 6px 12px !important;
+        border: 1px solid #0D28A6 !important;
+
+        &:hover {
+          background-color: #2341c9 !important;
+          color: #FFF !important;
+        }
+      }
+
+      .input-group {
+        margin-top: 4px;
+        min-width: 170px;
+        min-height: 36px;
+      }
+    }
+  }
+
+  .card-mobil {
+    min-width: 1047px;
+
+    .card {
+      width: 333px;
+      height: 586px;
+      margin-top: 32px;
+      display: flex;
+      border-radius: 8px;
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+      padding: 8px;
+      box-sizing: border-box;
+
+      .card-body {
+        h5.card-title {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        }
+
+        h6 {
+          margin-bottom: 1rem;
+        }
+
+        .btn-group button img {
+          padding: 0 7px;
+        }
+
+        p.card-text img {
+          padding-right: 9.5px;
+        }
+      }
+
+      .btn-pilih {
+        width: 285px;
+        height: 48px;
+        background-color: #5cb85f;
+        color: white;
+        font-weight: 700;
+        padding: 8px 12px;
+        
+        &:hover {
+          background-color: #9adf9c;
+          color: white;
+
+        }
+      }
+    }
+  }
+}
+// End Form Search
+
 // Section Footer
 .footer {
   margin-bottom: 100px;

@@ -9,6 +9,7 @@ export default function MainRoute() {
       <Routes>
         <Route path='/' element={<FormSearch />} />
         <Route path='/search' element={<Search />} />
+        <Route path='/detail/:id' element={<Search />} />
       </Routes>
     </>
   )
