@@ -1,0 +1,690 @@
+body {
+  position: relative;
+  font-family: Helvetica, sans-serif;
+}
+
+// Navbar styling
+nav, .hero {
+  background-color: #F1F3FF;
+}
+
+.navbar {
+  .navbar-nav {
+    .nav-item {
+      margin-right: 32px;
+
+      .nav-link {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: black;
+
+        &:hover {
+          color: #0D28A6;
+        }
+      }
+    }
+  }
+}
+
+.btn-register, .btn-get-started{
+  background-color: #5CB85F !important;
+  color: white !important;
+  padding: 8px 12px 8px 12px !important;
+
+  &:hover {
+    background-color: #7ed681 !important;
+  }
+}
+
+// Hero Section
+.hero {
+  position: relative;
+  min-height: 430px;
+
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}
+
+.hero-img {
+  img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+// End Hero Section
+
+// Services Section
+.services {
+  margin: 100px 0;
+
+  h3 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    margin-top: 24px;
+  }
+
+  .services-list {
+    margin-top: 20px;
+
+    span {
+      margin-left: 23px;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 300;
+    }
+  }
+  
+  // Setting img services responsive
+  .img-services-2 {
+    display: none;
+  }
+  // end setting
+}
+// End Services Section
+
+// Why Us Section
+.why-us {
+  margin-bottom: 100px;
+
+  h3 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    margin-bottom: 40px;
+  }
+
+  .card {
+    min-height: 196px;
+    min-width: 268px;
+    border: 1px solid #D0D0D0 !important;
+    transition: .5s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .card-body {
+      .card-tittle {
+        margin-bottom: 16px;
+      }
+  
+      .card-subtitle {
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+// End Why Us Section
+
+// Testimonial Section
+.testimonial {
+  margin-bottom: 100px;
+
+  h3 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+  }
+
+  .owl-carousel {
+    .owl-nav{
+      .owl-prev{
+        transition: .4s;
+        &:hover {
+          background-color: #5cb85f !important;
+          border-radius: 50% 50%;
+        }
+        img {
+          &:hover {
+            opacity: 0.2;
+          }
+        }
+      }
+
+      .owl-next {
+        transition: .4s;
+        &:hover {
+          background-color: #5cb85f !important;
+          border-radius: 50% 50%;
+        }
+        img {
+          &:hover {
+            opacity: 0.2;
+          }
+        }
+      }
+    }
+
+    .item {
+      background-color:#F1F3FF;
+      min-height: 270px;
+      width: 619px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+      margin-bottom: 24px;
+      
+      .img-testimonial {
+        width: 80px;
+        height: 80px;
+        margin: 95px 46px 95px 46px;
+      }
+
+      .img-rating {
+        width: 80px;
+        height: 16px;
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-size: 14;
+        line-height: 20px;
+        font-weight: 300;
+      }
+
+      h6 {
+        margin-top: -9px;
+        font-size: 14;
+        font-weight: 400;
+        line-height: 20px;
+      }
+    }
+  }
+}
+// End Testimonial Section
+
+// Section CTA Banner
+.cta-banner {
+  margin-bottom: 100px;
+
+  .cta-bg {
+    min-height: 326px;
+    background-color: #0D28A6;
+    border-radius: 13px;
+
+    h3 {
+      margin-top: 64px;
+      font-size: 36px;
+      line-height: 54px;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+
+    p {
+      color: #FFFFFF;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 20px;
+      margin-top: 16px;
+      margin-bottom: 60px;
+    }
+  }
+}
+// End Section CTA Banner
+
+// Section FAQ
+.faq {
+  margin-bottom: 150px;
+
+  h3 {
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+
+  .accordion {
+    .accordion-item {
+      margin-bottom: 16px;
+      border: 1px solid #D4D4D4;
+      border-radius: 4px;
+
+      h2 {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+      }
+    }
+  }
+}
+// End Section FAQ
+
+// Section Footer
+.footer {
+  margin-bottom: 100px;
+
+  .address-list {
+    ul {
+      list-style: none;
+  
+      li {
+        margin-bottom: 16px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .nav-list {
+    ul {
+      list-style: none;
+
+      li {
+        margin-bottom: 16px;
+
+        a {
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          color: black;
+
+          &:hover {
+            color: #0D28A6;
+          }
+        }
+      }
+    }
+  }
+
+  .sosmed-list {
+    p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 20px;
+    }
+
+    a {
+      margin-right: 16px;
+    }
+  }
+
+  .copyright {
+    p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 20px;
+      margin-bottom: 16px;
+    }
+  }
+}
+// End Section Footer
+
+// Responsive
+@media only screen and (max-width: 1200px){
+  // Hero Section
+  .hero-img {
+    img {
+      width: 50%;
+    }
+  }
+
+  // Testimonial Section
+  .testimonial {
+    .owl-carousel {
+      .item {
+        min-height: 100px;
+        width: 380px;
+        
+        .img-testimonial {
+          width: 60px;
+          height: 60px;
+          margin: 60px 26px 60px 20px;
+        }
+
+        .img-rating {
+          width: 60px;
+          height: 12px;
+          margin-bottom: 5px;
+        }
+
+        p {
+          font-size: 12px;
+          margin-bottom: 10px;
+        }
+
+        h6 {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  // End Testimonial Section
+
+  // Footer Section
+  .footer {
+    .sosmed-list {
+      img {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px){
+  .navbar{
+    .navbar-nav {
+      .nav-item {
+        margin-right: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero-img {
+    img {
+      display: none;
+    }
+  }
+
+  // WServices Section
+  .services {
+    .img-services {
+      margin-bottom: 20px;
+    }
+  }
+
+  // Why Us section
+  .why-us {
+    h3, p {
+      text-align: center;
+    }
+  }
+
+  // Testimonial Section
+  .testimonial {
+    .owl-carousel {
+      .item {
+        min-height: 100px;
+        width: 330px;
+        
+        .img-testimonial {
+          width: 50px;
+          height: 50px;
+          margin: 60px 15px 60px 15px;
+        }
+
+        .img-rating {
+          width: 50px;
+          height: 10px;
+          margin-bottom: 5px;
+        }
+
+        p {
+          font-size: 10px;
+          margin-bottom: 10px;
+        }
+
+        h6 {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  // End Testimonial Section
+}
+
+@media only screen and (max-width: 767px){
+  // Services Seciton
+  .services {
+    h3, p{
+      text-align: center;
+    }
+    
+    .services-list {
+      img {
+        margin-left: 20%;
+      }
+    }
+  }
+
+  // Why Us Section
+  .why-us {
+    h3, p {
+      text-align: center;
+    }
+
+    .card {
+      p, h6 {
+        text-align: center;
+      }
+
+      img {
+        margin-left: 45%;
+      }
+    }
+  }
+
+  // Testimonial Seciton
+  // .testimonial{
+  //   .owl-carousel{
+  //     .item{
+  //       width: 330px;
+  //     }
+  //   }
+  // }
+  .testimonial {
+    .owl-carousel {
+      .item {
+        width: 330px;
+        .img-testimonial {
+          width: 80px;
+          height: 80px;
+          margin-left: 110px;
+          margin-bottom: 15px;
+        }
+
+        .img-rating {
+          width: 60px;
+          height: 12px;
+          margin-left: 120px;
+        }
+
+        p {
+          font-size: 12px;
+          margin-bottom: 10px;
+          padding: 0 15px 0 15px;
+          text-align: center;
+        }
+        
+        h6 {
+          font-size: 12px;
+          padding: 0 15px 0 15px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  // CTA Banner Section
+  .cta-banner {
+    .cta-bg {
+      min-height: 250px;
+      
+      h3 {
+        margin-top: 30px;
+        font-size: 24px;
+      }
+  
+      p {
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+
+  // Footer Section
+  .footer {
+    .address-list {
+      margin-left: -32px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px){
+  // WServices Section
+  .services {
+    h3, p{
+      text-align: center;
+    }
+    
+    .services-list {
+      img {
+        margin-left: 8%;
+      }
+    }
+
+    // Setting img services responsive
+    .img-services {
+      display: none;
+    }
+
+    .img-services-2 {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 16px !important;
+    }
+    // end setting
+  }
+
+  // Testimonial
+  .testimonial {
+    .owl-carousel {
+      .item {
+        .img-testimonial {
+          width: 80px;
+          height: 80px;
+          margin-left: 110px;
+          margin-bottom: 15px;
+        }
+
+        .img-rating {
+          width: 60px;
+          height: 12px;
+          margin-left: 120px;
+        }
+
+        p {
+          font-size: 12px;
+          margin-bottom: 10px;
+          padding: 0 15px 0 15px;
+          text-align: center;
+        }
+        
+        h6 {
+          font-size: 12px;
+          padding: 0 15px 0 15px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  // CTA Banner Section
+  .cta-banner {
+    .cta-bg {
+      min-height: 230px;
+  
+      h3 {
+        margin-top: 20px;
+        font-size: 24px;
+        line-height: 24px;
+      }
+  
+      p {
+        font-size: 14px;
+        margin-bottom: 20px;
+        padding: 0 10px 0 10px;
+      }
+
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+
+  // FAQ Section
+  .faq {
+    h3{
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+
+  // Footer Section
+  .footer {
+    .address-list {
+      margin-bottom: 20px;
+      text-align: center;
+      margin-left: -25px;
+    }
+
+    .nav-list {
+      text-align: center;
+      margin-left: -25px;
+      margin-bottom: 20px;
+    }
+    
+    .sosmed-list, .copyright {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+
+
