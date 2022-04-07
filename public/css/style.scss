@@ -196,7 +196,123 @@ nav, .hero {
     }
   }
 }
-// End Form Search
+// End Page Search
+
+// Detail
+.detail-page {
+  position: relative;
+  margin-bottom: 108px;
+
+  .head {
+    background-color: #F1F3FF;
+    min-height: 150px;
+  }
+
+  .box {
+    max-width: 1047px;
+    min-height: 106px;
+    border-radius: 8px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    margin-top: -70px;
+
+    p {
+      margin: 24px 0 -10px 24px;
+    }
+
+    .row-input {
+      padding: 24px 0 24px 24px;
+
+      .btn-edit {
+        background-color: #FFF !important;
+        color: #000 !important;
+        padding: 6px 12px !important;
+        border: 1px solid #0D28A6 !important;
+
+        &:hover {
+          background-color: #2341c9 !important;
+          color: #FFF !important;
+        }
+      }
+
+      .input-group {
+        margin-top: 4px;
+        min-width: 230px;
+        min-height: 36px;
+      }
+    }
+  }
+
+  .detail-section {
+    min-width: 1047px;
+
+    .card-detail {
+      min-width: 605px;
+      border-radius: 8px;
+      background-color: #FFF;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+
+      .card-title {
+        p {
+            margin: 24px 0 0 24px;
+        }
+      }
+
+      .card-body {
+        p {
+          margin: 0 0 0 10px;
+        }
+
+        ul {
+          li {
+            color: #8A8A8A;
+            ;
+          }
+        }
+      }
+    }
+
+    .card-detail-mobil {
+      min-width: 405px;
+      border-radius: 8px;
+      background-color: #FFF;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+      margin-left: 32px;
+
+      .card-body {
+
+        padding: 24px;
+        .icon {
+          margin-bottom: 56px;
+          p {
+            margin-right: 15px;
+          }
+        }
+  
+        span {
+          margin-left: 230px;
+        }
+  
+        .btn-lanjut {
+          width: 358px;
+          height: 48px;
+          background-color: #5cb85f;
+          color: white;
+          font-weight: 700;
+          padding: 8px 12px;
+          
+          &:hover {
+            background-color: #9adf9c;
+            color: white;
+  
+          }
+        }
+      }
+      
+    }
+  }
+}
+// End Detail
 
 // Section Footer
 .footer {

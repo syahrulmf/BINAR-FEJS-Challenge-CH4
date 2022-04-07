@@ -192,6 +192,115 @@ nav, .hero {
   color: white;
 }
 
+.detail-page {
+  position: relative;
+  margin-bottom: 108px;
+}
+
+.detail-page .head {
+  background-color: #F1F3FF;
+  min-height: 150px;
+}
+
+.detail-page .box {
+  max-width: 1047px;
+  min-height: 106px;
+  border-radius: 8px;
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  margin-top: -70px;
+}
+
+.detail-page .box p {
+  margin: 24px 0 -10px 24px;
+}
+
+.detail-page .box .row-input {
+  padding: 24px 0 24px 24px;
+}
+
+.detail-page .box .row-input .btn-edit {
+  background-color: #FFF !important;
+  color: #000 !important;
+  padding: 6px 12px !important;
+  border: 1px solid #0D28A6 !important;
+}
+
+.detail-page .box .row-input .btn-edit:hover {
+  background-color: #2341c9 !important;
+  color: #FFF !important;
+}
+
+.detail-page .box .row-input .input-group {
+  margin-top: 4px;
+  min-width: 230px;
+  min-height: 36px;
+}
+
+.detail-page .detail-section {
+  min-width: 1047px;
+}
+
+.detail-page .detail-section .card-detail {
+  min-width: 605px;
+  border-radius: 8px;
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.detail-page .detail-section .card-detail .card-title p {
+  margin: 24px 0 0 24px;
+}
+
+.detail-page .detail-section .card-detail .card-body p {
+  margin: 0 0 0 10px;
+}
+
+.detail-page .detail-section .card-detail .card-body ul li {
+  color: #8A8A8A;
+}
+
+.detail-page .detail-section .card-detail-mobil {
+  min-width: 405px;
+  border-radius: 8px;
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  margin-left: 32px;
+}
+
+.detail-page .detail-section .card-detail-mobil .card-body {
+  padding: 24px;
+}
+
+.detail-page .detail-section .card-detail-mobil .card-body .icon {
+  margin-bottom: 56px;
+}
+
+.detail-page .detail-section .card-detail-mobil .card-body .icon p {
+  margin-right: 15px;
+}
+
+.detail-page .detail-section .card-detail-mobil .card-body span {
+  margin-left: 230px;
+}
+
+.detail-page .detail-section .card-detail-mobil .card-body .btn-lanjut {
+  width: 358px;
+  height: 48px;
+  background-color: #5cb85f;
+  color: white;
+  font-weight: 700;
+  padding: 8px 12px;
+}
+
+.detail-page .detail-section .card-detail-mobil .card-body .btn-lanjut:hover {
+  background-color: #9adf9c;
+  color: white;
+}
+
 .footer {
   margin-bottom: 100px;
 }
