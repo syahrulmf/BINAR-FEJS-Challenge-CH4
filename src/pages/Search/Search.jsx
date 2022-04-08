@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import iconMobil from '../../assets/img/fi_car.png';
 import iconUser from '../../assets/icon/fi_users.svg';
 import iconSetting from '../../assets/icon/fi_settings.svg';
 import iconCalendar from '../../assets/icon/fi_calendar.svg';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import Loader from '../../components/Loader/Loader';
 
 export default function Search() {
 
@@ -91,8 +91,8 @@ export default function Search() {
                   </div>
                 </div>
               </form>
-              {loading && "Loading Data"}
             </div>
+            {loading && (<Loader />)}
             {/* End Box Form */}
             <div className="card-mobil mt-4">
               <div className="row">

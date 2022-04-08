@@ -141,12 +141,9 @@ nav, .hero {
 }
 
 .page-search .card-mobil .card {
-  width: 333px;
+  width: 330px;
   height: 586px;
   margin-top: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   border-radius: 8px;
   -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
@@ -284,7 +281,7 @@ nav, .hero {
 }
 
 .detail-page .detail-section .card-detail-mobil .card-body span {
-  margin-left: 230px;
+  margin-left: 200px;
 }
 
 .detail-page .detail-section .card-detail-mobil .card-body .btn-lanjut {
@@ -299,6 +296,41 @@ nav, .hero {
 .detail-page .detail-section .card-detail-mobil .card-body .btn-lanjut:hover {
   background-color: #9adf9c;
   color: white;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-top: 16px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+  margin: 100px auto;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .footer {
