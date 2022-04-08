@@ -1,10 +1,27 @@
-import React from 'react';
-import iconMobil from '../../assets/img/fi_car.png';
+import React, { useEffect, useState } from 'react';
 import iconUser from '../../assets/icon/fi_users.svg';
 import iconSetting from '../../assets/icon/fi_settings.svg';
 import iconCalendar from '../../assets/icon/fi_calendar.svg';
+import axios from 'axios';
+import { useParams } from 'react-router-dom';
 
 export default function Detail() {
+  const { id } = useParams();
+  const [dataDetail, setDataDetail] = useState([])
+
+  useEffect(() => {
+    handleDetail();
+  }, [id])
+
+  const handleDetail = async () =>{
+    try {
+      const res = await axios(`https://rent-cars-api.herokuapp.com/customer/car/${id}`);
+      setDataDetail(res.data)
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
     <section className="detail-page">
       <div className="row">
@@ -94,9 +111,9 @@ export default function Detail() {
                       <div class="card-detail-mobil">
                         <div class="card-body">
                           <h5 class="card-title d-flex justify-content-center">
-                              <img src={iconMobil} alt="img-car" />
+                              <img width={300} src={dataDetail.image} alt="img-car" />
                           </h5>
-                          <p><strong>Nama/Tipe Mobil</strong></p>
+                          <p><strong>{dataDetail.name}</strong></p>
                           <div className="icon d-flex">
                             <p class="card-text">
                                 <img className='me-1' src={iconUser} alt="icon-key" />4 Orang
@@ -108,7 +125,7 @@ export default function Detail() {
                                 <img className='me-1' src={iconCalendar} alt="icon-clock" />Tahun 2020
                             </p>
                           </div>
-                          <p>Total <span><strong>Rp.430.000</strong></span></p>
+                          <p>Total <span><strong>Rp.{dataDetail.price}</strong></span></p>
                           <button type="button" class="btn btn-lanjut">Lanjutkan Pembayaran
                           </button>
                         </div>

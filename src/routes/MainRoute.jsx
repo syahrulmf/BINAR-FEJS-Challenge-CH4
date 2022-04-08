@@ -10,7 +10,7 @@ export default function MainRoute() {
       <Routes>
         <Route path='/' element={<FormSearch />} />
         <Route path='/search' element={<Search />} />
-        <Route path='/detail' element={<Detail />} />
+        <Route path='/detail/:id' element={<Detail />} />
       </Routes>
     </>
   )
