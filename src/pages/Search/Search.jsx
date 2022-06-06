@@ -1,27 +1,24 @@
-import React, { useEffect, useState } from 'react';
-import iconUser from '../../assets/icon/fi_users.svg';
-import iconSetting from '../../assets/icon/fi_settings.svg';
-import iconCalendar from '../../assets/icon/fi_calendar.svg';
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
-import Loader from '../../components/Loader/Loader';
+import React, { useEffect, useState } from "react";
+import iconUser from "../../assets/icon/fi_users.svg";
+import iconSetting from "../../assets/icon/fi_settings.svg";
+import iconCalendar from "../../assets/icon/fi_calendar.svg";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import Loader from "../../components/Loader/Loader";
 
 export default function Search() {
-
   const [dataList, setDataList] = useState([]);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
-    handleData()
-  }, [])
+    handleData();
+  }, []);
 
   const handleData = async () => {
     setLoading(true);
     try {
-      const res = await axios(
-        "https://rent-cars-api.herokuapp.com/customer/car"
-      );
+      const res = await axios("https://rent-car-appx.herokuapp.com/admin/car");
       setDataList(res.data);
     } catch (error) {
       console.log(error);
@@ -31,8 +28,8 @@ export default function Search() {
   };
 
   const handleGoDetail = (id) => {
-    navigate(`/detail/${id}`)
-  }
+    navigate(`/detail/${id}`);
+  };
 
   return (
     <section className="page-search">
@@ -46,7 +43,9 @@ export default function Search() {
             <div className="box">
               <div className="row">
                 <div className="col">
-                  <p><strong>Pencarianmu</strong></p>
+                  <p>
+                    <strong>Pencarianmu</strong>
+                  </p>
                 </div>
               </div>
               <form>
@@ -83,7 +82,11 @@ export default function Search() {
                   <div className="col-auto">
                     <span>Jumlah Penumpang (optional)</span>
                     <div className="input-group">
-                      <input type="number" className="form-control" placeholder="Jumlah Penumpang" />
+                      <input
+                        type="number"
+                        className="form-control"
+                        placeholder="Jumlah Penumpang"
+                      />
                     </div>
                   </div>
                   <div className="col-auto align-self-end">
@@ -92,35 +95,49 @@ export default function Search() {
                 </div>
               </form>
             </div>
-            {loading && (<Loader />)}
+            {loading && <Loader />}
             {/* End Box Form */}
             <div className="card-mobil mt-4">
               <div className="row">
                 <div className="col-md-12">
                   <div className="row">
                     {dataList.map((item) => {
-                      return(
+                      return (
                         <div className="col-md-4">
                           <div class="card" key={item.id}>
                             <div class="card-body">
                               <h5 class="card-title">
-                                  <img width={270} src={item.image} alt="img-car" />
+                                <img
+                                  width={270}
+                                  src={item.image}
+                                  alt="img-car"
+                                />
                               </h5>
                               <p>{item.name}</p>
                               <h6>Rp {item.price} / hari</h6>
-                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, quae.</p>
-                              <p class="card-text">
-                                  <img src={iconUser} alt="icon-key" />4 Orang
+                              <p>
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Libero, quae.
                               </p>
                               <p class="card-text">
-                                  <img src={iconSetting} alt="icon-clock" />Manual
+                                <img src={iconUser} alt="icon-key" />4 Orang
                               </p>
                               <p class="card-text">
-                                  <img src={iconCalendar} alt="icon-clock" />Tahun 2020
+                                <img src={iconSetting} alt="icon-clock" />
+                                Manual
+                              </p>
+                              <p class="card-text">
+                                <img src={iconCalendar} alt="icon-clock" />
+                                Tahun 2020
                               </p>
                               <div class="btn-group" aria-label="Basic example">
-                                  <button type="button" class="btn btn-pilih" onClick={() => handleGoDetail(item.id)}>Pilih Mobil
-                                  </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-pilih"
+                                  onClick={() => handleGoDetail(item.id)}
+                                >
+                                  Pilih Mobil
+                                </button>
                               </div>
                             </div>
                           </div>
@@ -135,5 +152,5 @@ export default function Search() {
         </div>
       </div>
     </section>
-  )
+  );
 }
